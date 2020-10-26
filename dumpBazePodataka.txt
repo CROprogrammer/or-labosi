@@ -1,0 +1,114 @@
+CREATE TABLE proizvodac (
+	nazivProizvodac	VARCHAR(50) PRIMARY KEY
+);
+
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Rockstar North');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Rockstar San Diego');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Naughty Dog');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Ubisoft Montreal');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('SCE Santa Monica Studio');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Treyarch');
+INSERT INTO proizvodac (nazivProizvodac) VALUES ('Infinity Ward');
+
+CREATE TABLE izdavac (
+	nazivIzdavac	VARCHAR(50) PRIMARY KEY
+);
+
+INSERT INTO izdavac (nazivIzdavac) VALUES ('Rockstar Games');
+INSERT INTO izdavac (nazivIzdavac) VALUES ('Ubisoft');
+INSERT INTO izdavac (nazivIzdavac) VALUES ('Sony Computer Entertainment');
+INSERT INTO izdavac (nazivIzdavac) VALUES ('Activision');
+
+CREATE TABLE videoigra (
+	nazivVideoigra	VARCHAR(30) PRIMARY KEY,
+	godinaIzdanja	SMALLINT CHECK (godinaIzdanja BETWEEN 1900 AND 3000),
+	metascore	SMALLINT CHECK (metascore BETWEEN 0 AND 100),
+	wikipedia_stranica VARCHAR(100),
+	multiplayer	CHAR(2),
+	nazivProizvodac	VARCHAR(50) REFERENCES proizvodac(nazivProizvodac),
+	nazivIzdavac	VARCHAR(50) REFERENCES izdavac(nazivIzdavac)
+);
+
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('GTA 5', 2013, 97, 'https://en.wikipedia.org/wiki/Grand_Theft_Auto_V', 'DA', 'Rockstar North', 'Rockstar Games');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('GTA San Andreas', 2004, 95, 'https://en.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas', 'NE', 'Rockstar North', 'Rockstar Games');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Red Dead Redemption', 2010, 95, 'https://en.wikipedia.org/wiki/Red_Dead_Redemption', 'DA', 'Rockstar San Diego', 'Rockstar Games');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('The Last of Us', 2013, 95, 'https://en.wikipedia.org/wiki/The_Last_of_Us', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Uncharted 3', 2011, 92, 'https://en.wikipedia.org/wiki/Uncharted_3:_Drake%27s_Deception', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Watch Dogs', 2014, 82, 'https://en.wikipedia.org/wiki/Watch_Dogs', 'DA', 'Ubisoft Montreal', 'Ubisoft');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Assassins Creed 2', 2009, 90, 'https://en.wikipedia.org/wiki/Assassin%27s_Creed_II', 'NE', 'Ubisoft Montreal', 'Ubisoft');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Far Cry 3', 2012, 88, 'https://en.wikipedia.org/wiki/Far_Cry_3', 'DA', 'Ubisoft Montreal', 'Ubisoft');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('God of War 3', 2010, 92, 'https://en.wikipedia.org/wiki/God_of_War_III', 'NE', 'SCE Santa Monica Studio', 'Sony Computer Entertainment');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Call of Duty 3', 2006, 90, 'https://en.wikipedia.org/wiki/Call_of_Duty_3', 'NE', 'Treyarch', 'Activision');
+INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
+VALUES ('Call of Duty Modern Warfare 2', 2009, 94, 'https://en.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_2', 'DA', 'Infinity Ward', 'Activision');		
+		
+CREATE TABLE lik (
+	imeLik	text[] PRIMARY KEY,
+	nazivVideoigra	VARCHAR(30) REFERENCES videoigra(nazivVideoigra)
+);
+
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Michael', 'Franklin', 'Trevor'], 'GTA 5');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['CJ', 'SWEET'], 'GTA San Andreas');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['John Marston'], 'Red Dead Redemption');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Joel','Ellie'], 'The Last of Us');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Drake','Sully'], 'Uncharted 3');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Aiden Pearce'], 'Watch Dogs');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Ezio Auditore da Firenze'], 'Assassins Creed 2');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Jason'], 'Far Cry 3');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Kratos'], 'God of War 3');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Sgt. James Doyle'], 'Call of Duty 3');
+INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Roach', 'Soap'], 'Call of Duty Modern Warfare 2');
+
+CREATE TABLE zanr (
+	nazivZanr	VARCHAR(30) PRIMARY KEY
+);
+
+INSERT INTO zanr (nazivZanr) VALUES ('akcijska avantura');
+INSERT INTO zanr (nazivZanr) VALUES ('FPS');
+INSERT INTO zanr (nazivZanr) VALUES ('hack and slash');
+
+CREATE TABLE jeZanr (
+	nazivZanr	VARCHAR(30) REFERENCES zanr(nazivZanr),
+	nazivVideoigra	VARCHAR(30) REFERENCES videoigra(nazivVideoigra),
+	PRIMARY KEY (nazivZanr, nazivVideoigra)
+);
+
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'GTA 5');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'GTA San Andreas');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'Red Dead Redemption');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'The Last of Us');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'Uncharted 3');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'Watch Dogs');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('akcijska avantura', 'Assassins Creed 2');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('FPS', 'Far Cry 3');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('hack and slash', 'God of War 3');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('FPS', 'Call of Duty 3');
+INSERT INTO jeZanr (nazivZanr, nazivVideoigra) VALUES ('FPS', 'Call of Duty Modern Warfare 2');
+
+CREATE TABLE jeNaPlatformi (
+	nazivVideoigra	VARCHAR(30) REFERENCES videoigra(nazivVideoigra),
+	nazivPlatforma	text[],
+	PRIMARY KEY (nazivVideoigra, nazivPlatforma)
+);
+
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('GTA 5' , ARRAY['PS3', 'PS4', 'XBOX 360', 'XBOX One', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('GTA San Andreas' , ARRAY['PS2', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Red Dead Redemption' , ARRAY['PS3', 'XBOX 360']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('The Last of Us' , ARRAY['PS3', 'PS4']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Uncharted 3' , ARRAY['PS3']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Watch Dogs' , ARRAY['PS3', 'PS4', 'XBOX 360', 'XBOX One', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Assassins Creed 2' , ARRAY['PS3', 'XBOX 360', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Far Cry 3' , ARRAY['PS3', 'XBOX 360', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('God of War 3' , ARRAY['PS3']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Call of Duty 3' , ARRAY['PS2', 'PC']);
+INSERT INTO jeNaPlatformi (nazivVideoigra, nazivPlatforma) VALUES ('Call of Duty Modern Warfare 2' , ARRAY['PS3', 'XBOX 360', 'PC']);
