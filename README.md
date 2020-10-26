@@ -1,18 +1,18 @@
 # OR-LABOSI
 ***Repozitorij za predmet otvoreno računarstvo na FER-u***
 
-## Opis licencije
+## Licencije
 Creative Commons Zero v1.0 Universal
-#
+
 ## Autor
 Michel Haralović
-#
+
 ## Verzija skupa podataka
 Verzija 1.0
-#
+
 ## Jezik podataka
 hrvatski
-#
+
 ## Opisi atributa
 * nazivVideoIgra - ime videoigre
 * godinaIzdanja - godina u kojoj je igra izašla
@@ -24,4 +24,3 @@ hrvatski
 * nazivZanr - zanr kojem pripada videoigra
 * nazivPlatforma - skup platformi na kojem je videoigra dostupna
 * imeLik - imena likova iz videoigre
-#
