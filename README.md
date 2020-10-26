@@ -1,5 +1,5 @@
 # OR-LABOSI
-***Repozitorij za predmet otvoreno računarstvo na FER-u***
+***Repozitorij za labose predmeta otvoreno računarstvo na FER-u***
 
 ## Licencije
 Creative Commons Zero v1.0 Universal
