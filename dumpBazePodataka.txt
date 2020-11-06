@@ -30,44 +30,55 @@ CREATE TABLE videoigra (
 );
 
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('GTA 5', 2013, 97, 'https://en.wikipedia.org/wiki/Grand_Theft_Auto_V', 'DA', 'Rockstar North', 'Rockstar Games');
+VALUES ('GTA 5', 2013, 97, 'Grand_Theft_Auto_V', 'DA', 'Rockstar North', 'Rockstar Games');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('GTA San Andreas', 2004, 95, 'https://en.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas', 'NE', 'Rockstar North', 'Rockstar Games');
+VALUES ('GTA San Andreas', 2004, 95, 'Grand_Theft_Auto:_San_Andreas', 'NE', 'Rockstar North', 'Rockstar Games');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Red Dead Redemption', 2010, 95, 'https://en.wikipedia.org/wiki/Red_Dead_Redemption', 'DA', 'Rockstar San Diego', 'Rockstar Games');
+VALUES ('Red Dead Redemption', 2010, 95, 'Red_Dead_Redemption', 'DA', 'Rockstar San Diego', 'Rockstar Games');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('The Last of Us', 2013, 95, 'https://en.wikipedia.org/wiki/The_Last_of_Us', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
+VALUES ('The Last of Us', 2013, 95, 'The_Last_of_Us', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Uncharted 3', 2011, 92, 'https://en.wikipedia.org/wiki/Uncharted_3:_Drake%27s_Deception', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
+VALUES ('Uncharted 3', 2011, 92, 'Uncharted_3:_Drake%27s_Deception', 'DA', 'Naughty Dog', 'Sony Computer Entertainment');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Watch Dogs', 2014, 82, 'https://en.wikipedia.org/wiki/Watch_Dogs', 'DA', 'Ubisoft Montreal', 'Ubisoft');
+VALUES ('Watch Dogs', 2014, 82, 'Watch_Dogs', 'DA', 'Ubisoft Montreal', 'Ubisoft');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Assassins Creed 2', 2009, 90, 'https://en.wikipedia.org/wiki/Assassin%27s_Creed_II', 'NE', 'Ubisoft Montreal', 'Ubisoft');
+VALUES ('Assassins Creed 2', 2009, 90, 'Assassin%27s_Creed_II', 'NE', 'Ubisoft Montreal', 'Ubisoft');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Far Cry 3', 2012, 88, 'https://en.wikipedia.org/wiki/Far_Cry_3', 'DA', 'Ubisoft Montreal', 'Ubisoft');
+VALUES ('Far Cry 3', 2012, 88, 'Far_Cry_3', 'DA', 'Ubisoft Montreal', 'Ubisoft');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('God of War 3', 2010, 92, 'https://en.wikipedia.org/wiki/God_of_War_III', 'NE', 'SCE Santa Monica Studio', 'Sony Computer Entertainment');
+VALUES ('God of War 3', 2010, 92, 'God_of_War_III', 'NE', 'SCE Santa Monica Studio', 'Sony Computer Entertainment');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Call of Duty 3', 2006, 90, 'https://en.wikipedia.org/wiki/Call_of_Duty_3', 'NE', 'Treyarch', 'Activision');
+VALUES ('Call of Duty 3', 2006, 90, 'Call_of_Duty_3', 'NE', 'Treyarch', 'Activision');
 INSERT INTO videoigra (nazivVideoigra, godinaIzdanja, metascore, wikipedia_stranica, multiplayer, nazivProizvodac, nazivIzdavac)
-VALUES ('Call of Duty Modern Warfare 2', 2009, 94, 'https://en.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_2', 'DA', 'Infinity Ward', 'Activision');		
+VALUES ('Call of Duty Modern Warfare 2', 2009, 94, 'Call_of_Duty:_Modern_Warfare_2', 'DA', 'Infinity Ward', 'Activision');		
 		
 CREATE TABLE lik (
-	imeLik	text[] PRIMARY KEY,
+	imeLik	jsonb PRIMARY KEY,
 	nazivVideoigra	VARCHAR(30) REFERENCES videoigra(nazivVideoigra)
 );
 
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Michael', 'Franklin', 'Trevor'], 'GTA 5');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['CJ', 'SWEET'], 'GTA San Andreas');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['John Marston'], 'Red Dead Redemption');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Joel','Ellie'], 'The Last of Us');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Drake','Sully'], 'Uncharted 3');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Aiden Pearce'], 'Watch Dogs');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Ezio Auditore da Firenze'], 'Assassins Creed 2');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Jason'], 'Far Cry 3');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Kratos'], 'God of War 3');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Sgt. James Doyle'], 'Call of Duty 3');
-INSERT INTO lik (imeLik, nazivVideoigra) VALUES (ARRAY['Roach', 'Soap'], 'Call of Duty Modern Warfare 2');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Michael", "Prezime":"De Santa"}, {"Ime":"Trevor", "Prezime":"Phillips"}, {"Ime":"Franklin", "Prezime":"Clinton"}]', 'GTA 5');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Carl", "Prezime":"Johnson"}, {"Ime":"Sweet", "Prezime":"Johnson"}]', 'GTA San Andreas');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"John", "Prezime":"Marston"}]', 'Red Dead Redemption');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Joel", "Prezime":"Miller"}, {"Ime":"Ellie", "Prezime":"Williams"}]', 'The Last of Us');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Nathan", "Prezime":"Drake"}, {"Ime":"Victor ˝Sully˝", "Prezime":"Sullivan"}]', 'Uncharted 3');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Aiden", "Prezime":"Pearce"}]', 'Watch Dogs');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Ezio", "Prezime":"Auditore da Firenze"}]', 'Assassins Creed 2');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Jason", "Prezime":"Brody"}]', 'Far Cry 3');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"Kratos", "Prezime":""}]', 'God of War 3');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"James", "Prezime":"Doyle"}]', 'Call of Duty 3');
+INSERT INTO lik (imeLik, nazivVideoigra) 
+VALUES ('[{"Ime":"John ˝Soap˝", "Prezime":"MacTavish"}, {"Ime":"Gary ˝Roach˝", "Prezime":"Sanderson"}]', 'Call of Duty Modern Warfare 2');
 
 CREATE TABLE zanr (
 	nazivZanr	VARCHAR(30) PRIMARY KEY
