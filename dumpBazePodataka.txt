@@ -58,7 +58,7 @@ CREATE TABLE lik (
 );
 
 INSERT INTO lik (imeLik, nazivVideoigra) 
-VALUES ('[{"Ime":"Michael", "Prezime":"De Santa"}, {"Ime":"Trevor", "Prezime":"Phillips"}, {"Ime":"Franklin", "Prezime":"Clinton"}]', 'GTA 5');
+VALUES ('[{"Ime":"Michael", "Prezime":"DeSanta"}, {"Ime":"Trevor", "Prezime":"Phillips"}, {"Ime":"Franklin", "Prezime":"Clinton"}]', 'GTA 5');
 INSERT INTO lik (imeLik, nazivVideoigra) 
 VALUES ('[{"Ime":"Carl", "Prezime":"Johnson"}, {"Ime":"Sweet", "Prezime":"Johnson"}]', 'GTA San Andreas');
 INSERT INTO lik (imeLik, nazivVideoigra) 
@@ -66,11 +66,11 @@ VALUES ('[{"Ime":"John", "Prezime":"Marston"}]', 'Red Dead Redemption');
 INSERT INTO lik (imeLik, nazivVideoigra) 
 VALUES ('[{"Ime":"Joel", "Prezime":"Miller"}, {"Ime":"Ellie", "Prezime":"Williams"}]', 'The Last of Us');
 INSERT INTO lik (imeLik, nazivVideoigra) 
-VALUES ('[{"Ime":"Nathan", "Prezime":"Drake"}, {"Ime":"Victor ˝Sully˝", "Prezime":"Sullivan"}]', 'Uncharted 3');
+VALUES ('[{"Ime":"Nathan", "Prezime":"Drake"}, {"Ime":"Victor", "Prezime":"Sullivan"}]', 'Uncharted 3');
 INSERT INTO lik (imeLik, nazivVideoigra) 
 VALUES ('[{"Ime":"Aiden", "Prezime":"Pearce"}]', 'Watch Dogs');
 INSERT INTO lik (imeLik, nazivVideoigra) 
-VALUES ('[{"Ime":"Ezio", "Prezime":"Auditore da Firenze"}]', 'Assassins Creed 2');
+VALUES ('[{"Ime":"Ezio", "Prezime":"Auditore"}]', 'Assassins Creed 2');
 INSERT INTO lik (imeLik, nazivVideoigra) 
 VALUES ('[{"Ime":"Jason", "Prezime":"Brody"}]', 'Far Cry 3');
 INSERT INTO lik (imeLik, nazivVideoigra) 
@@ -78,7 +78,7 @@ VALUES ('[{"Ime":"Kratos", "Prezime":""}]', 'God of War 3');
 INSERT INTO lik (imeLik, nazivVideoigra) 
 VALUES ('[{"Ime":"James", "Prezime":"Doyle"}]', 'Call of Duty 3');
 INSERT INTO lik (imeLik, nazivVideoigra) 
-VALUES ('[{"Ime":"John ˝Soap˝", "Prezime":"MacTavish"}, {"Ime":"Gary ˝Roach˝", "Prezime":"Sanderson"}]', 'Call of Duty Modern Warfare 2');
+VALUES ('[{"Ime":"John", "Prezime":"MacTavish"}, {"Ime":"Gary", "Prezime":"Sanderson"}]', 'Call of Duty Modern Warfare 2');
 
 CREATE TABLE zanr (
 	nazivZanr	VARCHAR(30) PRIMARY KEY

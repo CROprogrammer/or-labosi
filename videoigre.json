@@ -12,7 +12,7 @@
     "imelik": [
       {
         "Ime": "Michael",
-        "Prezime": "De Santa"
+        "Prezime": "DeSanta"
       },
       {
         "Ime": "Trevor",
@@ -99,7 +99,7 @@
         "Prezime": "Drake"
       },
       {
-        "Ime": "Victor ½Sully½",
+        "Ime": "Victor",
         "Prezime": "Sullivan"
       }
     ]
@@ -134,7 +134,7 @@
     "imelik": [
       {
         "Ime": "Ezio",
-        "Prezime": "Auditore da Firenze"
+        "Prezime": "Auditore"
       }
     ]
   },
@@ -201,11 +201,11 @@
     "nazivplatforma": [ "PS3", "XBOX 360", "PC" ],
     "imelik": [
       {
-        "Ime": "John ½Soap½",
+        "Ime": "John",
         "Prezime": "MacTavish"
       },
       {
-        "Ime": "Gary ½Roach½",
+        "Ime": "Gary",
         "Prezime": "Sanderson"
       }
     ]
