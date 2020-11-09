@@ -1,0 +1,1527 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "OR labos",
+    "description": "Skup videoigara za labos iz otvorenog računarstva.",
+    "items": [
+        {
+            "$id": "#/items/0",
+            "type": "object",
+            "title": "The first items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/0/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/0/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/0/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/0/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/0/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/0/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/0/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/0/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/0/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/0/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/0/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/0/properties/nazivplatforma/items/2",
+                            "type": "string",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/0/properties/nazivplatforma/items/3",
+                            "type": "string",
+                            "title": "The fourth items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/0/properties/nazivplatforma/items/4",
+                            "type": "string",
+                            "title": "The fifth items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/0/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/0/properties/imelik/items/0",
+                            "type": "object",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/0/properties/imelik/items/0/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/0/properties/imelik/items/0/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/0/properties/imelik/items/1",
+                            "type": "object",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/0/properties/imelik/items/1/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/0/properties/imelik/items/1/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/0/properties/imelik/items/2",
+                            "type": "object",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/0/properties/imelik/items/2/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/0/properties/imelik/items/2/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/1",
+            "type": "object",
+            "title": "The second items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/1/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/1/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/1/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/1/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/1/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/1/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/1/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/1/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/1/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/1/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/1/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/1/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/1/properties/imelik/items/0",
+                            "type": "object",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/1/properties/imelik/items/0/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/1/properties/imelik/items/0/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/1/properties/imelik/items/1",
+                            "type": "object",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/1/properties/imelik/items/1/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/1/properties/imelik/items/1/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/2",
+            "type": "object",
+            "title": "The third items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/2/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/2/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/2/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/2/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/2/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/2/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/2/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/2/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/2/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/2/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/2/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/2/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/2/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/2/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/2/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/3",
+            "type": "object",
+            "title": "The fourth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/3/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/3/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/3/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/3/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/3/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/3/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/3/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/3/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/3/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/3/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/3/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/3/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/3/properties/imelik/items/0",
+                            "type": "object",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/3/properties/imelik/items/0/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/3/properties/imelik/items/0/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/3/properties/imelik/items/1",
+                            "type": "object",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/3/properties/imelik/items/1/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/3/properties/imelik/items/1/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/4",
+            "type": "object",
+            "title": "The fifth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/4/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/4/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/4/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/4/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/4/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/4/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/4/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/4/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/4/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/4/properties/nazivplatforma/items/0",
+                        "type": "string",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance."
+                    }
+                },
+                "imelik": {
+                    "$id": "#/items/4/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/4/properties/imelik/items/0",
+                            "type": "object",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/4/properties/imelik/items/0/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/4/properties/imelik/items/0/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/4/properties/imelik/items/1",
+                            "type": "object",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/4/properties/imelik/items/1/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/4/properties/imelik/items/1/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/5",
+            "type": "object",
+            "title": "The sixth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/5/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/5/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/5/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/5/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/5/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/5/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/5/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/5/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/5/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/5/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/5/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/5/properties/nazivplatforma/items/2",
+                            "type": "string",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/5/properties/nazivplatforma/items/3",
+                            "type": "string",
+                            "title": "The fourth items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/5/properties/nazivplatforma/items/4",
+                            "type": "string",
+                            "title": "The fifth items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/5/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/5/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/5/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/5/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/6",
+            "type": "object",
+            "title": "The seventh items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/6/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/6/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/6/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/6/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/6/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/6/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/6/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/6/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/6/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/6/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/6/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/6/properties/nazivplatforma/items/2",
+                            "type": "string",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/6/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/6/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/6/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/6/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/7",
+            "type": "object",
+            "title": "The eighth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/7/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/7/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/7/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/7/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/7/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/7/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/7/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/7/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/7/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/7/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/7/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/7/properties/nazivplatforma/items/2",
+                            "type": "string",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/7/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/7/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/7/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/7/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/8",
+            "type": "object",
+            "title": "The ninth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/8/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/8/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/8/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/8/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/8/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/8/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/8/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/8/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/8/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/8/properties/nazivplatforma/items/0",
+                        "type": "string",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance."
+                    }
+                },
+                "imelik": {
+                    "$id": "#/items/8/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/8/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/8/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/8/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/9",
+            "type": "object",
+            "title": "The tenth items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/9/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/9/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/9/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/9/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/9/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/9/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/9/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/9/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/9/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/9/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/9/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/9/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": {
+                        "$id": "#/items/9/properties/imelik/items/0",
+                        "type": "object",
+                        "title": "The first items schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "Ime",
+                            "Prezime"
+                        ],
+                        "properties": {
+                            "Ime": {
+                                "$id": "#/items/9/properties/imelik/items/0/properties/Ime",
+                                "type": "string",
+                                "title": "The Ime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "Prezime": {
+                                "$id": "#/items/9/properties/imelik/items/0/properties/Prezime",
+                                "type": "string",
+                                "title": "The Prezime schema",
+                                "description": "An explanation about the purpose of this instance."
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        {
+            "$id": "#/items/10",
+            "type": "object",
+            "title": "The eleventh items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "nazivvideoigra",
+                "godinaizdanja",
+                "metascore",
+                "wikipedia_stranica",
+                "multiplayer",
+                "nazivproizvodac",
+                "nazivizdavac",
+                "nazivzanr",
+                "nazivplatforma",
+                "imelik"
+            ],
+            "properties": {
+                "nazivvideoigra": {
+                    "$id": "#/items/10/properties/nazivvideoigra",
+                    "type": "string",
+                    "title": "The nazivvideoigra schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "godinaizdanja": {
+                    "$id": "#/items/10/properties/godinaizdanja",
+                    "type": "integer",
+                    "title": "The godinaizdanja schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "metascore": {
+                    "$id": "#/items/10/properties/metascore",
+                    "type": "integer",
+                    "title": "The metascore schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "wikipedia_stranica": {
+                    "$id": "#/items/10/properties/wikipedia_stranica",
+                    "type": "string",
+                    "title": "The wikipedia_stranica schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "multiplayer": {
+                    "$id": "#/items/10/properties/multiplayer",
+                    "type": "string",
+                    "title": "The multiplayer schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivproizvodac": {
+                    "$id": "#/items/10/properties/nazivproizvodac",
+                    "type": "string",
+                    "title": "The nazivproizvodac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivizdavac": {
+                    "$id": "#/items/10/properties/nazivizdavac",
+                    "type": "string",
+                    "title": "The nazivizdavac schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivzanr": {
+                    "$id": "#/items/10/properties/nazivzanr",
+                    "type": "string",
+                    "title": "The nazivzanr schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "nazivplatforma": {
+                    "$id": "#/items/10/properties/nazivplatforma",
+                    "type": "array",
+                    "title": "The nazivplatforma schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/10/properties/nazivplatforma/items/0",
+                            "type": "string",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/10/properties/nazivplatforma/items/1",
+                            "type": "string",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        },
+                        {
+                            "$id": "#/items/10/properties/nazivplatforma/items/2",
+                            "type": "string",
+                            "title": "The third items schema",
+                            "description": "An explanation about the purpose of this instance."
+                        }
+                    ]
+                },
+                "imelik": {
+                    "$id": "#/items/10/properties/imelik",
+                    "type": "array",
+                    "title": "The imelik schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "items": [
+                        {
+                            "$id": "#/items/10/properties/imelik/items/0",
+                            "type": "object",
+                            "title": "The first items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/10/properties/imelik/items/0/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/10/properties/imelik/items/0/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        {
+                            "$id": "#/items/10/properties/imelik/items/1",
+                            "type": "object",
+                            "title": "The second items schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "$id": "#/items/10/properties/imelik/items/1/properties/Ime",
+                                    "type": "string",
+                                    "title": "The Ime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "Prezime": {
+                                    "$id": "#/items/10/properties/imelik/items/1/properties/Prezime",
+                                    "type": "string",
+                                    "title": "The Prezime schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    ]
+}
