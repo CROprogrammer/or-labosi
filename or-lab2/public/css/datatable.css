@@ -1,0 +1,150 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 15px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table .thead {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tr:hover:not(.thead) {
+    background-color: #f1f1f1;
+}
+
+.styled-table tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.downloadButton {
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    position: relative;
+    background-color: #009879;
+    border: none;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    padding: 16px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 15px 30px;
+}
+  
+.button:after .downloadButton {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+  
+.button:active:after .downloadButton {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-group button .downloadButton {
+    padding: 10px 24px;
+    cursor: pointer; 
+    float: left; 
+    margin-bottom: 10px;
+}
+
+.btn-group .downloadButton:hover {
+	background: #2EBC99;
+}
+
+.form-style-6 {
+    font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+
+.form-style-6 h1 {
+	background: #009879;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 select {
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-style-6 input[type="text"]:focus,
+.form-style-6 select:focus {
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.form-style-6 .filterButton {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #009879;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+    border-left-style: none;	
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.form-style-6 .filterButton:hover {
+	background: #2EBC99;
+}

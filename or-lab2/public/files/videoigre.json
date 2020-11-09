@@ -1,0 +1,213 @@
+[
+  {
+    "nazivvideoigra": "GTA 5",
+    "godinaizdanja": 2013,
+    "metascore": 97,
+    "wikipedia_stranica": "Grand_Theft_Auto_V",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Rockstar North",
+    "nazivizdavac": "Rockstar Games",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3", "PS4", "XBOX 360", "XBOX One", "PC" ],
+    "imelik": [
+      {
+        "Ime": "Michael",
+        "Prezime": "DeSanta"
+      },
+      {
+        "Ime": "Trevor",
+        "Prezime": "Phillips"
+      },
+      {
+        "Ime": "Franklin",
+        "Prezime": "Clinton"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "GTA San Andreas",
+    "godinaizdanja": 2004,
+    "metascore": 95,
+    "wikipedia_stranica": "Grand_Theft_Auto:_San_Andreas",
+    "multiplayer": "NE",
+    "nazivproizvodac": "Rockstar North",
+    "nazivizdavac": "Rockstar Games",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS2", "PC" ],
+    "imelik": [
+      {
+        "Ime": "Carl",
+        "Prezime": "Johnson"
+      },
+      {
+        "Ime": "Sweet",
+        "Prezime": "Johnson"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Red Dead Redemption",
+    "godinaizdanja": 2010,
+    "metascore": 95,
+    "wikipedia_stranica": "Red_Dead_Redemption",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Rockstar San Diego",
+    "nazivizdavac": "Rockstar Games",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3", "XBOX 360" ],
+    "imelik": [
+      {
+        "Ime": "John",
+        "Prezime": "Marston"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "The Last of Us",
+    "godinaizdanja": 2013,
+    "metascore": 95,
+    "wikipedia_stranica": "The_Last_of_Us",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Naughty Dog",
+    "nazivizdavac": "Sony Computer Entertainment",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3", "PS4" ],
+    "imelik": [
+      {
+        "Ime": "Joel",
+        "Prezime": "Miller"
+      },
+      {
+        "Ime": "Ellie",
+        "Prezime": "Williams"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Uncharted 3",
+    "godinaizdanja": 2011,
+    "metascore": 92,
+    "wikipedia_stranica": "Uncharted_3:_Drake%27s_Deception",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Naughty Dog",
+    "nazivizdavac": "Sony Computer Entertainment",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3" ],
+    "imelik": [
+      {
+        "Ime": "Nathan",
+        "Prezime": "Drake"
+      },
+      {
+        "Ime": "Victor",
+        "Prezime": "Sullivan"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Watch Dogs",
+    "godinaizdanja": 2014,
+    "metascore": 82,
+    "wikipedia_stranica": "Watch_Dogs",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Ubisoft Montreal",
+    "nazivizdavac": "Ubisoft",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3", "PS4", "XBOX 360", "XBOX One", "PC" ],
+    "imelik": [
+      {
+        "Ime": "Aiden",
+        "Prezime": "Pearce"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Assassins Creed 2",
+    "godinaizdanja": 2009,
+    "metascore": 90,
+    "wikipedia_stranica": "Assassin%27s_Creed_II",
+    "multiplayer": "NE",
+    "nazivproizvodac": "Ubisoft Montreal",
+    "nazivizdavac": "Ubisoft",
+    "nazivzanr": "akcijska avantura",
+    "nazivplatforma": [ "PS3", "XBOX 360", "PC" ],
+    "imelik": [
+      {
+        "Ime": "Ezio",
+        "Prezime": "Auditore"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Far Cry 3",
+    "godinaizdanja": 2012,
+    "metascore": 88,
+    "wikipedia_stranica": "Far_Cry_3",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Ubisoft Montreal",
+    "nazivizdavac": "Ubisoft",
+    "nazivzanr": "FPS",
+    "nazivplatforma": [ "PS3", "XBOX 360", "PC" ],
+    "imelik": [
+      {
+        "Ime": "Jason",
+        "Prezime": "Brody"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "God of War 3",
+    "godinaizdanja": 2010,
+    "metascore": 92,
+    "wikipedia_stranica": "God_of_War_III",
+    "multiplayer": "NE",
+    "nazivproizvodac": "SCE Santa Monica Studio",
+    "nazivizdavac": "Sony Computer Entertainment",
+    "nazivzanr": "hack and slash",
+    "nazivplatforma": [ "PS3" ],
+    "imelik": [
+      {
+        "Ime": "Kratos",
+        "Prezime": ""
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Call of Duty 3",
+    "godinaizdanja": 2006,
+    "metascore": 90,
+    "wikipedia_stranica": "Call_of_Duty_3",
+    "multiplayer": "NE",
+    "nazivproizvodac": "Treyarch",
+    "nazivizdavac": "Activision",
+    "nazivzanr": "FPS",
+    "nazivplatforma": [ "PS2", "PC" ],
+    "imelik": [
+      {
+        "Ime": "James",
+        "Prezime": "Doyle"
+      }
+    ]
+  },
+  {
+    "nazivvideoigra": "Call of Duty Modern Warfare 2",
+    "godinaizdanja": 2009,
+    "metascore": 94,
+    "wikipedia_stranica": "Call_of_Duty:_Modern_Warfare_2",
+    "multiplayer": "DA",
+    "nazivproizvodac": "Infinity Ward",
+    "nazivizdavac": "Activision",
+    "nazivzanr": "FPS",
+    "nazivplatforma": [ "PS3", "XBOX 360", "PC" ],
+    "imelik": [
+      {
+        "Ime": "John",
+        "Prezime": "MacTavish"
+      },
+      {
+        "Ime": "Gary",
+        "Prezime": "Sanderson"
+      }
+    ]
+  }
+]

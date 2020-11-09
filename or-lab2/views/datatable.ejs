@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <meta charset="UTF-8">
+        <meta name="description" content="2. labos iz otvorenog računarstva">
+        <meta name="keywords" content="open-source, videoigre, videogames, csv, json">
+        <meta name="author" content="Michel Haralović">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/datatable.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+    </head>
+
+    <body>
+
+        <%- include(`partials/header`); %>
+        
+        <main>
+
+            <!-- FORMA ZA PRETRAŽIVANJE -->
+
+            <form action="">
+                <div class="form-style-6">
+                    <h1>Pretraga:</h1> 
+
+                    <label for="pretraga">Polje za pretragu:</label>
+                    <input type="text" name="pretraga" id="pretraga" placeholder="Upiši filter ovdje..."/> <br>
+
+                    <select id="select" name="customers">
+                        <option value="-1" disabled selected hidden>Odaberi polje za pretragu:</option>
+                        <option value="10">Sva polja (wildcard)</option>
+                        <option value="0">Naziv videoigre</option>
+                        <option value="1">Godina izlaska</option>
+                        <option value="2">Metascore</option>
+                        <option value="3">Wikipedia handle</option>
+                        <option value="4">Multiplayer</option>
+                        <option value="5">Proizvodac</option>
+                        <option value="6">Izdavac</option>
+                        <option value="7">Žanr</option>
+                        <option value="8">Platforma</option>
+                        <option value="9">Imena likova</option>
+                    </select> <br/>
+
+                    <input type="button" value="Pretraži" class="button filterButton" onclick="filterTable()" /><br/>
+                </div>
+            </form>
+
+            <table id="table" class="styled-table">
+                <tr class="thead">
+                    <th>Naziv videoigre</th> <th>Godina izlaska</th> <th>Metascore</th>
+                    <th>Wikipedia handle</th> <th>Multiplayer</th> <th>Proizvodac</th>
+                    <th>Izdavac</th> <th>Žanr</th> <th>Platforma</th> <th>Imena likova</th>
+                </tr>
+                <% for (row of datatableRows) { %>
+                    <tr class="active-row"> 
+                        <% for (var key in row) { %>
+                            <td>
+                            <% if (typeof(row[key]) == 'object') { %>
+                                <% for (var rowKey in row[key]) { %>
+                                    <% if (typeof(row[key][rowKey]) == 'object') { %>
+                                        <% for (var k in row[key][rowKey]) { %>
+                
+                                            <% if (k == "Prezime" && rowKey != Object.keys(row[key])[Object.keys(row[key]).length-1]) { %> 
+                                                <%= row[key][rowKey][k] %>,
+                                            <% } else { %>
+                                                <%= row[key][rowKey][k] %>
+                                            <% } %>
+                                            
+                                        <% } %> 
+                                    <% } else { %>
+                                        <% if (rowKey != Object.keys(row[key])[Object.keys(row[key]).length-1]) { %> 
+                                            <%= row[key][rowKey] %>,
+                                        <% } else { %>
+                                            <%= row[key][rowKey] %>
+                                        <% } %> 
+                                    <% } %>
+                                <% } %>
+                            <% } else { %>
+                                <%= row[key] %> 
+                            <% } %>
+                            </td>
+                        <% } %>                         
+                    </tr>
+                <% } %>
+            </table>
+        
+        </main>
+
+        <div class="btn-group" style="width:100%">
+            <button class="button downloadButton"  onclick="exportTableToCSV('videoigre.csv')">Preuzmi kao CSV datoteku</button>
+            <button class="button downloadButton"  onclick="exportTableToJSON('videoigre.json')">Preuzmi kao JSON datoteku</button>
+        </div>
+    </body>
+
+    <script src="js/filterTable.js"></script>
+    <script src="js/downloadCSV.js"></script>
+    <script src="js/downloadJSON.js"></script>
+
+</html>

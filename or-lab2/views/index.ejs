@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <meta charset="UTF-8">
+        <meta name="description" content="2. labos iz otvorenog računarstva">
+        <meta name="keywords" content="open-source, videoigre, videogames, csv, json">
+        <meta name="author" content="Michel Haralović">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/datatable.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+    </head>
+
+    <body>
+
+        <%- include(`partials/header`); %>
+        
+        <main>
+
+            <h1 class="naslov">OTVORENI SKUP PODATAKA O VIDEOIGRAMA</h1>
+
+            <div class="btn-group">
+                <button class="button downloadButton"><a id="downloadAnchorElem" href="/files/videoigre.csv" class="link menu-item">Preuzmi kao CSV datoteku</a></button>
+                <button class="button downloadButton"><a href="/files/videoigre.json" class="link menu-item">Preuzmi kao JSON datoteku</a></button>
+            </div>
+            <div class="gallery" >
+                <div class="photo-box" >
+                    <a href="/files/videoigre.csv">
+                        <img class="photo-box-image" src="images/csv_logo.png" alt="csv_logo"/>
+                    </a>
+                </div>
+                <div class="photo-box" >
+                    <a href="/files/videoigre.json">
+                        <img class="photo-box-image" src="images/json_logo.png" alt="json_logo"/>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    
+</html>
