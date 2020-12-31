@@ -1,0 +1,178 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Otvoreni skup videoigara",
+    "version": "3.0",
+    "licence": "CC0-1.0",
+    "contact": {
+      "name": "API support",
+      "email": "mh51669@fer.hr"
+    }
+  },
+  "paths": {
+    "/videoigre": {
+      "get": {
+        "summary": "Dohvati listu videoigara",
+        "description": "Vraća listu svih videoigara u bazi podataka",
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćeni objekti videoigara",
+          },
+          "404": {
+            "description": "Videoigre nisu pronađene"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      },
+      "post": {
+        "summary": "Kreira novu videoigru",
+        "description": "Sprema novu videoigru u listu svih videoigara u bazi podataka",
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Dodan objekt videoigre",
+          },
+          "404": {
+            "description": "Videoigru nije moguće dodati"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      }
+    },
+    "/videoigre/{id}": {
+      "get": {
+        "summary": "Dohvati videoigru s navedenim ID-om",
+        "description": "Vraća videoigru s navedenim ID-om iz baze podataka",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID videoigre",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćen objekt videoigre",
+          },
+          "404": {
+            "description": "Videoigra sa danim ID-om nije pronađena"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      },
+      "put": {
+        "summary": "Dohvati videoigru s navedenim ID-om",
+        "description": "Vraća videoigru s navedenim ID-om iz baze podataka",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID videoigre",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ažuriran objekt videoigre",
+          },
+          "404": {
+            "description": "Videoigru sa danim ID-om nije moguće ažurirati"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Dohvati videoigru s navedenim ID-om",
+        "description": "Vraća videoigru s navedenim ID-om iz baze podataka",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID videoigre",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Izbrisan objekt videoigre",
+          },
+          "404": {
+            "description": "Videoigru sa danim ID-om nije moguće izbrisati"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      }
+    },
+    "/proizvodaci": {
+      "get": {
+        "summary": "Dohvati listu proizvođača",
+        "description": "Vraća listu svih proizvođača videoigara u bazi podataka",
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćeni objekti proizvođača",
+          },
+          "404": {
+            "description": "Proizvođači nisu pronađeni"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      }
+    },
+    "/likovi": {
+      "get": {
+        "summary": "Dohvati listu likova",
+        "description": "Vraća listu svih likova iz videoigara u bazi podataka",
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćeni objekti likova",
+          },
+          "404": {
+            "description": "Likovi nisu pronađeni"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      }
+    },
+    "/izdavaci": {
+      "get": {
+        "summary": "Dohvati listu izdavača",
+        "description": "Vraća listu svih izdavača videoigara u bazi podataka",
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćeni objekti izdavača",
+          },
+          "404": {
+            "description": "Izdavači nisu pronađeni"
+          },
+          "501": {
+            "description": "Method not implemented for requested resource"
+          }
+        }
+      },
+    }
+  }
+}
