@@ -117,6 +117,28 @@
         }
       }
     },
+    "/videoigre/{id}/picture": {
+      "get": {
+        "summary": "Dohvati sliku videoigre s navedenim ID-om",
+        "description": "Vraća sliku videoigre s navedenim ID-om iz datotečnog sustava",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID videoigre",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dohvaćena slika videoigre",
+          },
+          "404": {
+            "description": "Videoigra sa danim ID-om nije pronađena"
+          }
+        }
+      }
+    },
     "/proizvodaci": {
       "get": {
         "summary": "Dohvati listu proizvođača",
