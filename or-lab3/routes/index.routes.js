@@ -81,7 +81,17 @@ router.get('/videoigre/:videogameID', async function(req, res, next) {
             let videogameSchema = {
                 "status": "OK",
                 "message": "Dohvaćen objekt videoigre", 
-                "response": game
+                "response": {
+                    "@context": {
+                        "@vocab": "http://schema.org/", 
+                        "nazivvideoigra": "name",
+                        "godinaizdanja": "datePublished",
+                        "multiplayer": "playMode",
+                        "nazivproizvodac": "author",
+                        "nazivizdavac": "publisher"
+                    }, 
+                    game
+                }
             }
 
             res.status(200).json(videogameSchema,
